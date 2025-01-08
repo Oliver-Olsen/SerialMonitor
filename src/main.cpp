@@ -5,8 +5,13 @@
 // This char is then stored in the incomingByte variable. This variable stores the entered char.
 // This char is then printed back to the terminal/monitor as a decimal number. The Serial.available() returns an integer
 // that represents if there is anything storred in the serial's buffer.
+// The Serial.read() allows the user to enter a char.
 #include <Arduino.h>
 
+// 5b. The provided code has been implemented below
+
+// 5d. The Serial.println() contains a DEC. This forces the the entered letter to be printed as a decimal.
+// This is the decimal representation of the binary value the letter have.
 // put function declarations here:
 int incomingByte = 0;
 void setup() {
