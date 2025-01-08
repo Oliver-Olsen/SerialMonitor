@@ -10,13 +10,18 @@
 
 // 5b. The provided code has been implemented below
 
-// 5d. The Serial.println() contains a DEC. This forces the the entered letter to be printed as a decimal.
+// 5d. The Serial.println() contains a DEC. Also because we are storing our data as an integer. This forces the the entered letter to be printed as a decimal.
 // This is the decimal representation of the binary value the letter have.
+// We could also have written BIN to get the representation of the char's binary value
 // put function declarations here:
+
+// 5e 
 int incomingByte = 0;
 void setup() {
   Serial.begin(9600);
 }
+
+
 void loop() {
   if (Serial.available() > 0) {
     incomingByte = Serial.read();
